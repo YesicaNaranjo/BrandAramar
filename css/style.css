@@ -52,7 +52,7 @@ header{
     justify-content: flex-end;
     list-style: none;
     margin: 10px;
-    font-size:2rem;
+    font-size:1,3rem;
  }
 
 .carrito{
@@ -250,3 +250,6 @@ footer{
     transform: translate(50px);
     width: 10%;
  }
+
+ /*BOOTSTRAP*/
+ 
