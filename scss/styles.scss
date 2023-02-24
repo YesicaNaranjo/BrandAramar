@@ -1,0 +1,268 @@
+//link de variables scss 
+@import "variables/vars" ;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos del primer contenedor: HEADER*/
+header{
+    font-family: 'Poppins', sans-serif;
+    background-color: $color-cabecera;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 8px; 
+    
+    .carrito{
+    margin-right: 50px;
+    width: 5%;
+    height: 5%;
+    }
+
+    nav{
+        div{
+            .logo{
+               /* estructura espacial del logo */
+                margin: 5px;
+                margin-left: 50px;
+                width: 15%;
+
+                /*Propiedades de la animacion*/
+                animation-name: focalizacion;
+                animation-duration: 4s;
+                animation-delay: 1s;       
+            }     
+                /*Linea de tiempo de la animación*/
+                @keyframes focalizacion {
+                    0%  {transform: scale(1); }
+                    20% {transform: scale(1.2);}
+                    100%{transform: scale(1);}
+            }            
+             button{
+            .navbar-toggler-icon {
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                background-image: var(--bs-navbar-toggler-icon-bg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                color: $color-botonSecundario;
+            }
+            }
+            div{
+                .menu{
+                    display: flex;
+                    display: inline-flex;
+                    justify-content: flex-end;
+                    list-style: none;
+                    margin: 10px;
+                    font-size:1rem;
+                }    
+            }
+        }
+    } 
+   }
+
+
+/*estilos del segundo contenedor: MAIN*/
+main{
+    /* DESKTOP display: grid; 
+   grid-template-columns: repeat(3, 1fr);*/
+   font-family: 'Poppins', sans-serif;
+   height: 60vh;
+   background-color:beige;
+   padding: 2%;
+   gap: 2%;
+   align-items: center;
+   font-size: 1.5rem;
+    .seccion{
+        width: 100%;
+        transition: 3s;
+    }
+    .seccion:hover{
+        transform: scale(0.9);
+        opacity: 70%;
+        transition: 5s;
+    }
+    h1{
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 1px 1px black;
+        /*background-color: brown;*/
+    }
+    div{
+       
+        div{
+            .proporcion{
+                width: 70%;
+            }
+            .achica{
+                width: 55%;
+               align-items: center;
+                }
+        }
+  
+       
+        p{
+        font-size: 6 rem;
+        }
+    }
+
+}
+
+
+main .contendedor .boton{
+    background-color: grey;
+    box-shadow: 2px 2px black;
+    justify-items: center;
+}
+
+.itemFixed{
+    position: fixed;
+    width: 6%;
+    height: 8%;
+    bottom: 0;
+    right: 0;
+
+         /*PROPIEDADES DE LA ANIMACIÓN */
+         animation-name: focalizacion;
+         animation-iteration-count: infinite;
+         animation-duration: 4s;
+         animation-delay: 1s;
+}
+
+.vector{
+    transform: translate(80px);
+    width: 40%;
+}
+
+/* uso de medias queries para mobile
+    @media screen and (min-width: 600px){
+        main{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 33%);
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        main{
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: auto;
+            box-shadow: rgb(0, 0, 0);
+        }
+    }
+    */
+
+    /*CHOCOLATES*/
+
+    div{
+        .nuevaImagen{
+            width: 100%;
+            /*PROPIEDADES DE LA ANIMACIÓN */
+            animation-name: mantenimientos;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-delay: 1s;
+         }
+           /*LINEA DE TIEMPO DE LA ANIMACION*/
+           @keyframes mantenimientos {
+             0%{
+                 transform: scale(1);
+             }
+             20%{
+                 transform:scale(1.2);
+                 transform-box:fill-box;
+             }
+             100%{
+                 transform:scale(1);
+             }
+            }
+    }
+
+
+
+    /*ESPARCIBLES*/
+
+.esparcible{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    background-color: white;
+    padding: 2%;
+    margin: 2%;
+    gap: 2%;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+.vectorEsparcibles{
+    transform: translate(80px);
+    width: 50%;
+    height: 50%;
+}
+
+.botonEsparcible{
+    background-color: grey;
+    box-shadow: 2px 2px black;
+    justify-items: center;
+}
+
+    /*SNACKS*/
+.snack{
+        font-family: 'Poppins', sans-serif;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 1fr 1fr;
+        justify-self: center;
+        background-color: white;
+        padding: 2%;
+        margin: 2%;
+        gap: 2%;
+        align-items: center;
+        font-size: 1.5rem;
+}
+.vectorSnacks{
+    transform: translate(80px);
+    width: 50%;
+    height: 50%;
+}
+.botonSnacks{
+    background-color: grey;
+    box-shadow: 2px 2px black;
+    justify-items: center;
+}
+   /*SUSCRIPCIONES*/
+   
+   section{
+    font-family: 'Poppins', sans-serif;
+    margin: 12px;
+    padding: 20px;
+
+   }
+/*estilos del tercer contenedor: FOOTER*/
+footer{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 1fr;
+    background-color: rgb(25, 199, 25);
+    justify-content: center;
+    margin-top: 50%;
+    margin:15px;
+    padding: 20px;
+}
+
+.icono{
+    transform: translate(50px);
+    width: 10%;
+ }

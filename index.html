@@ -17,70 +17,70 @@
 <!---->
 <body>
     <header>
-        <img class="logo" src="./img/logo-aramar-blanco.png" alt="Logo autoservicio Aramar">
-     <nav>
-        <ul class="menu">
-            <li>
-            <a href="index.html">Home</a>
-            </li>
-        </ul>
-        <ul class="menu">
-            <li>
-            <a href="./sections/chocolate.html">Chocolate</a>
-            </li>
-        </ul>
-        <ul class="menu">
-            <li>
-            <a href="./sections/esparcibles.html">Esparcibles</a>
-            </li>
-        </ul>
-        <ul class="menu">
-            <li>
-            <a href="./sections/snacks.html">Snacks</a>
-            </li>
-        </ul>
-        <ul class="menu">
-            <li>
-            <a href="./sections/suscripciones.html">Suscripciones</a>
-            </li>
-        </ul>
-        <ul class="menu">
-            <li>
-            <a href="./sections/sobreNosotros.html">Sobre Nosotros</a>
-            </li>
-        </ul>
+     <nav class="navbar navbar-expand-md">
+       <div class="container-fluid">
+        <img class="logo navbar-brand" src="./img/logo-aramar-blanco.png" alt="Logo autoservicio Aramar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="menu navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sections/chocolate.html">Chocolate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sections/esparcibles.html">Esparcibles</a>
+              </li>
+                      <!-- desplegable dentro del menu -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Nosotros</a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./sections/suscripciones.html">Suscripciones</a></li>
+              <li><a class="dropdown-item" href="./sections/sobreNosotros.html">Nosotros</a></li>
+              </ul>
+          </li>
+        </div>
+       </div>
      </nav>
+     
+     <form class=" d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
      <img class="carrito" src="./img/carrito-compras.png" alt="Carrito de compras">
     </header>
 
+
+
+  <main class = "container-fluid bg-main"> <!--class="contenedor"-->
     <section>    
-            <img class="seccion" src="./img/caravana.png" alt="foto-anuncio-caravana">
-            <br><br><br><br><br><br>
+      <img class="seccion" src="./img/caravana.png" alt="foto-anuncio-caravana">
     </section>
     <h1 style="text-align: center;">NUESTRAS CATEGORIAS DE PRODUCTO</h1>
-  <main > <!--class="contenedor"-->
-    <!--imagen referencia-->
-    <div class="contendedor chocolates">
-        <img class="vector" src="./img/vector-taza-chocolate.png" alt="vector-taza-chocolate">
-        <br> <br> <b style="font-size: larger";> CHOCOLATE </b> <br> 
-        <p> Chocolate de mesa a base de cocoa con pastillas individuales para empezar con energía tu día  </p>
-        <a class="boton" href="./sections/chocolate.html">VER PRODUCTOS</a>
-     <!--<div class="boton"> VER PRODUCTOS </div>-->
+    <div class="row d-flex justify-center contenedor">
+   <div class="col-sm-6 mb-3 mb-lg-3">
+     <div class="card proporcion" >
+      <img src="./img/vector-taza-chocolate.png" class="card-img-top achica" alt="vector-taza-chocolate">
+      <div class="card-body">
+        <h5 class="card-title">CHOCOLATE</h5>
+        <p class="card-text">Chocolate de mesa a base de cocoa con pastillas individuales para empezar con energía tu día.</p>
+        <a href="./sections/chocolate.html" class="btn btn-primary">COMPRAR</a>
+      </div>
+     </div>
     </div>
-    
-    <div class="contendedor esparcibles">
-        <img class="vector" src="./img/mantequilla-mani.png" alt="vector-mantequilla de mantequilla-mani">
-        <br> <br> <b style="font-size: larger";>ESPARCIBLES </b> <br> 
-        <p > Cremas de almendra, maní, marañón, y mani con diferentes conbinaciones para disfrutar y acompañar tus recetas favoritas todos los dias.</p>
-        <a class="boton" href="./sections/esparcibles.html">VER PRODUCTOS</a>
+    <div class="col-sm-6 mb-3 mb-lg-3">
+    <div class="card proporcion">
+      <img src="./img/mantequilla-mani.png" class="card-img-top achica" alt="vector-mantequilla de mantequilla-mani">
+      <div class="card-body">
+        <h5 class="card-title">ESPARCIBLES</h5>
+        <p class="card-text">Cremas de almendra, maní y marañón con diferentes conbinaciones para acompañar tus recetas favoritas.</p>
+        <a href="./sections/esparcibles.html" class="btn btn-primary">COMPRAR</a>
+      </div>
     </div>
-
-    <div class="contendedor snacks">
-        <img class="vector" src="./img/vector-snack.png" alt="vector papas-snack">
-        <br> <br> <b style="font-size: larger";>SNACKS </b> <br> 
-        <p> Snacks saludables que puedes llevar a todo lugar </p>
-        <a class="boton" href="./sections/snacks.html">VER PRODUCTOS</a>
-    
+    </div>
     </div>
     <!--boton de whatsapp-->
     <img class="itemFixed" src="./img/logo-whatsapp.png" alt="logo de icone-logo-whatsapp">
