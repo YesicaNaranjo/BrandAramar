@@ -56,9 +56,26 @@
 
 
   <main class = "container-fluid bg-main"> <!--class="contenedor"-->
-    <section>    
-      <img class="seccion" src="./img/caravana.png" alt="foto-anuncio-caravana">
-    </section>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/caravana.png" class="d-block w-100 seccion" alt="foto-anuncio-caravana">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/sabado-quincena-aramar.jpg" class="d-block w-100 seccion" alt="foto-sabado-quincenazo">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <h1 style="text-align: center;">NUESTRAS CATEGORIAS DE PRODUCTO</h1>
     <div class="row d-flex justify-center contenedor">
    <div class="col-sm-6 mb-3 mb-lg-3">
@@ -86,12 +103,8 @@
     <img class="itemFixed" src="./img/logo-whatsapp.png" alt="logo de icone-logo-whatsapp">
 
   </main>
-  <!--link de bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
 <!---->
-
-<footer>
+  <footer>
     <div><img class="icono" src="./img/logo-facebook-sinFondo.png" alt="logo de facebook">
     </div>
     <div><img  class="icono" src="./img/logo-instagram-sinFondo.png" alt="logo de instagram">
@@ -99,4 +112,8 @@
     <div><img  class="icono"  src="./img/logo-pinterest-sinFondo.png" alt="logo de pinterest">
     </div>
 </footer>
+  <!--link de bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
 </html>

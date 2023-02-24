@@ -62,7 +62,7 @@ main {
   /* DESKTOP display: grid; 
    grid-template-columns: repeat(3, 1fr);*/
   font-family: 'Poppins', sans-serif;
-  height: 60vh;
+  /*height: 60vh;*/
   background-color: beige;
   padding: 2%;
   gap: 2%;
@@ -204,11 +204,11 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: 1fr;
-  background-color: #19c719;
+  background-color: #9eb23b;
   justify-content: center;
-  margin-top: 50%;
   margin: 15px;
-  padding: 20px; }
+  padding: 20px;
+  margin-block-end: auto; }
 
 .icono {
   transform: translate(50px);
