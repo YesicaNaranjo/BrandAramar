@@ -17,12 +17,12 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-    padding: 8px; 
+    padding: 5px; 
     
     .carrito{
     margin-right: 50px;
-    width: 5%;
-    height: 5%;
+    width: 3%;
+    height: 3%;
     }
 
     nav{
@@ -31,7 +31,7 @@ header{
                /* estructura espacial del logo */
                 margin: 5px;
                 margin-left: 50px;
-                width: 15%;
+                width: 10%;
 
                 /*Propiedades de la animacion*/
                 animation-name: focalizacion;
@@ -252,17 +252,38 @@ main .contendedor .boton{
 /*estilos del tercer contenedor: FOOTER*/
 footer{
     font-family: 'Poppins', sans-serif;
+    padding: 22px;
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: 1fr;
     background-color: $color-cabecera;
     justify-content: center;
-    margin:15px;
-    padding: 20px;
     margin-block-end: auto;
-}
 
-.icono{
-    transform: translate(50px);
-    width: 10%;
- }
+    div{
+     .pie{
+      margin: 3px;
+     }    
+     img{
+        margin-top: 30px;
+     width: 70%; 
+    }
+        .iconosFooter{
+            display: flex;
+            display: inline-flex;
+            list-style: none;
+           }
+        ul{
+            .icono{
+                width: 45px;
+                height: 44px;
+                transform: translate(15px);
+            }
+        }
+        .hablemos{
+            display: flex;
+            display: inline-flex;
+            list-style: none;
+        }
+     }
+}
