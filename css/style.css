@@ -20,8 +20,7 @@ header {
     margin-right: 50px;
     width: 3%;
     height: 3%; }
-  header nav div {
-    /*Linea de tiempo de la animación*/ }
+
     header nav div .logo {
       /* estructura espacial del logo */
       margin: 5px;
@@ -87,11 +86,6 @@ main {
   main div p {
     font-size: 6 rem; }
 
-main .contendedor .boton {
-  background-color: grey;
-  box-shadow: 2px 2px black;
-  justify-items: center; }
-
 .itemFixed {
   position: fixed;
   width: 6%;
@@ -125,8 +119,6 @@ main .contendedor .boton {
     }
     */
 /*CHOCOLATES*/
-div {
-  /*LINEA DE TIEMPO DE LA ANIMACION*/ }
   div .nuevaImagen {
     width: 100%;
     /*PROPIEDADES DE LA ANIMACIÓN */
@@ -143,54 +135,6 @@ div {
     transform-box: fill-box; }
   100% {
     transform: scale(1); } }
-
-/*ESPARCIBLES*/
-.esparcible {
-  font-family: 'Poppins', sans-serif;
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: 1fr 1fr;
-  justify-self: center;
-  background-color: white;
-  padding: 2%;
-  margin: 2%;
-  gap: 2%;
-  align-items: center;
-  font-size: 1.5rem; }
-
-.vectorEsparcibles {
-  transform: translate(80px);
-  width: 50%;
-  height: 50%; }
-
-.botonEsparcible {
-  background-color: grey;
-  box-shadow: 2px 2px black;
-  justify-items: center; }
-
-/*SNACKS*/
-.snack {
-  font-family: 'Poppins', sans-serif;
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: 1fr 1fr;
-  justify-self: center;
-  background-color: white;
-  padding: 2%;
-  margin: 2%;
-  gap: 2%;
-  align-items: center;
-  font-size: 1.5rem; }
-
-.vectorSnacks {
-  transform: translate(80px);
-  width: 50%;
-  height: 50%; }
-
-.botonSnacks {
-  background-color: grey;
-  box-shadow: 2px 2px black;
-  justify-items: center; }
 
 /*SUSCRIPCIONES*/
 section {

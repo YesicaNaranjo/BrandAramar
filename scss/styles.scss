@@ -117,13 +117,6 @@ main{
 
 }
 
-
-main .contendedor .boton{
-    background-color: grey;
-    box-shadow: 2px 2px black;
-    justify-items: center;
-}
-
 .itemFixed{
     position: fixed;
     width: 6%;
@@ -186,61 +179,6 @@ main .contendedor .boton{
             }
     }
 
-
-
-    /*ESPARCIBLES*/
-
-.esparcible{
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 1fr 1fr;
-    justify-self: center;
-    background-color: white;
-    padding: 2%;
-    margin: 2%;
-    gap: 2%;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
-
-.vectorEsparcibles{
-    transform: translate(80px);
-    width: 50%;
-    height: 50%;
-}
-
-.botonEsparcible{
-    background-color: grey;
-    box-shadow: 2px 2px black;
-    justify-items: center;
-}
-
-    /*SNACKS*/
-.snack{
-        font-family: 'Poppins', sans-serif;
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        grid-template-rows: 1fr 1fr;
-        justify-self: center;
-        background-color: white;
-        padding: 2%;
-        margin: 2%;
-        gap: 2%;
-        align-items: center;
-        font-size: 1.5rem;
-}
-.vectorSnacks{
-    transform: translate(80px);
-    width: 50%;
-    height: 50%;
-}
-.botonSnacks{
-    background-color: grey;
-    box-shadow: 2px 2px black;
-    justify-items: center;
-}
    /*SUSCRIPCIONES*/
    
    section{
