@@ -13,9 +13,4 @@
 @mixin positionChocolate ($text-align, $overflow){
     text-align: $text-align;
     overflow: $overflow;
-
- @mixin borderChocolate ($border, $margin){
-    border: $border;
-    margin: $margin;
- }   
 }

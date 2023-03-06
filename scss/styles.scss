@@ -1,6 +1,9 @@
 //links de importacion
 @import "html/chocolate";
+@import "html/esparcibles";
 @import "utilidades/vars" ;
+@import "utilidades/extend";
+@import "utilidades/mixin";
 
 *{
     margin: 0;
@@ -79,7 +82,6 @@ main{
    grid-template-columns: repeat(3, 1fr);*/
    font-family: 'Poppins', sans-serif;
    /*height: 60vh;*/
-   background-color:beige;
    padding: 2%;
    gap: 2%;
    align-items: center;

@@ -1,6 +1,7 @@
 //importancion de archivos para que no explote.
 @import "../utilidades/mixin";
 @import "../utilidades/vars";
+@import "../utilidades/extend";
 
 /*seccion chocolate*/
 
@@ -27,7 +28,7 @@ div{
 //div de detalle del producto
 div{
     background: $color-cuaterniarioPleta;
-        background-image: linear-gradient( 135deg, $color-tarjetas 20%, $color-cuaterniarioPleta 100%);
+        background-image: linear-gradient( 135deg, $color-tarjeta 20%, $color-cuaterniarioPleta 100%);
         background-attachment: fixed;	
         background-size: cover;
         #contenedorChocolate{
@@ -102,10 +103,7 @@ div{
             display: inline-block;
             position: relative;
             overflow: hidden;
-            @include
-            height: 100%;
-    
-            width: 50%;
+            @include sizeChocolate (50%, 100%);
             display: inline-block;
         }
         
