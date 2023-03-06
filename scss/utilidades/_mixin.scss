@@ -1,9 +1,21 @@
 
-
-
 @mixin flexChocolate{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+
+@mixin sizeChocolate ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin positionChocolate ($text-align, $overflow){
+    text-align: $text-align;
+    overflow: $overflow;
+
+ @mixin borderChocolate ($border, $margin){
+    border: $border;
+    margin: $margin;
+ }   
 }

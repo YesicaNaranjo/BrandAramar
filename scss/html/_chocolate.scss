@@ -2,7 +2,7 @@
 @import "../utilidades/mixin";
 @import "../utilidades/vars";
 
-
+/*seccion chocolate*/
 
 .body-chocolate{
     @include flexChocolate;
@@ -12,30 +12,125 @@
 div{
 
     .card{
-        width:600px;
-        height: 300px;
+        @include sizeChocolate (100%, 100%);
         background-color: beige;
         overflow: hidden;
         @include flexChocolate;
-        
         .imgBox{
             position: relative;
             min-width: 300px;
-            width: 300px;
-            height: 100%;
+            @include sizeChocolate (300px, 100%);
             @include flexChocolate;
         }
     }
 }
+//div de detalle del producto
+div{
+    background: $color-cuaterniarioPleta;
+        background-image: linear-gradient( 135deg, $color-tarjetas 20%, $color-cuaterniarioPleta 100%);
+        background-attachment: fixed;	
+        background-size: cover;
+        #contenedorChocolate{
+            box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+            background: $color-cuaterniarioPleta;
+            border-radius: 5px;
+            margin: 5em auto;
+            @include positionChocolate (center, hidden);
+            @include sizeChocolate (740px, 380px);
+        }
+        .product-details {
+            position: relative;
+            float: left;
+            padding: 10px;
+            @include positionChocolate(left, hidden);
+            @include sizeChocolate (40%, 100%);
+        }
+        #contenedorChocolate .product-details > p {
+            text-align: center;
+            font-size: 22px;
+            color: black;   
+        }
+        .control{
+            position: absolute;
+            bottom: 10%;
+           left: 22.8%;        
+        }
+        .btn {
+            transform: translateY(0px);
+            transition: 0.3s linear;
+            background: $color-botonSecundario;
+            border-radius: 5px;
+          position: relative;
+          overflow: hidden;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            color: #eee;
+            padding: 0;
+            margin: 0;      
+        }
+        
+        .btn:hover{transform: translateY(-4px);}
+        
+        .btn span {
+            font-family: 'Farsan', cursive;
+            transition: transform 0.3s;
+            display: inline-block;
+          padding: 10px 20px;
+            font-size: 1.2em;
+            margin:0;
+            
+        }
+        .btn .price, .shopping-cart{
+            background: $color-terciarioPaleta;
+            @include sizeChocolate (0, 0);
+        }
+        
+        .btn .price {
+            transform: translateX(-10%); padding-right: 15px;
+        }
+        
+        .btn .buy {z-index: 3; font-weight: bolder;}
+        .btn:hover .price {transform: translateX(-110%);}
+        .btn:hover .shopping-cart {transform: translateX(0%);}
+        
+        
+        
+        /* product image  */
+        .product-image {
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            @include
+            height: 100%;
+    
+            width: 50%;
+            display: inline-block;
+        }
+        
+        #contenedorChocolate img {width: 100%;height: 100%;}
+        
+        .info {
+            background: rgba(27, 26, 26, 0.9);
+            font-family: 'Farsan', cursive;
+            transition: all 0.3s ease-out;
+            transform: translateX(-100%);
+            position: absolute;
+            line-height: 1.9;
+            text-align: left;
+            font-size: 120%;
+            cursor: no-drop;
+            color: #FFF;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+        
+        .product-image:hover img {transition: all 0.3s ease-out;}
+        .product-image:hover img {transform: scale(1.2, 1.2);}
 
-.product-card{
-    width: 90%;
-    margin: 50pc auto;
-    background: #ffffff;
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
-
-    .img-product{
-        position: relative;
-        margin: 0px;
-    }
-}
+        }
+    
+    

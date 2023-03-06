@@ -19,18 +19,22 @@
     <header>
         <nav class="navbar navbar-expand-md">
           <div class="container-fluid">
-           <img class="logo navbar-brand" src="../img/logo-aramar-blanco.png" alt="Logo autoservicio Aramar">
+            <a href="../index.html">
+           <img class="logo navbar-brand" src="../img/logo-aramar-blanco.png" alt="Logo autoservicio Aramar"></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
              </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="menu navbar-nav me-auto mb-2 mb-lg-0">
                  <li class="nav-item">
-                   <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                   <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                  </li>
                  <li class="nav-item">
                    <a class="nav-link active" aria-current="page" href="../sections/chocolate.html">Chocolate</a>
                  </li>
+                 <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../sections/esparcibles.html">Esparcibles</a>
+                </li>
                  <li class="nav-item">
                    <a class="nav-link active" aria-current="page" href="../sections/promociones.html">Promociones</a>
                  </li>
@@ -38,7 +42,7 @@
                  <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Nosotros</a>
                  <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="./suscripciones.html">Suscripciones</a></li>
+
                  <li><a class="dropdown-item" href="../sections/sobreNosotros.html">Nosotros</a></li>
                  </ul>
              </li>
@@ -50,31 +54,32 @@
 
         <div class="card">
           <div class="imgBox">
-            <img src="../img/chocolate-aramar-nueva-imagen.png"  alt="chocolate-aramar-nueva-imagen">
+            <img src="../img/anuncio-nueva-imagen.png"  alt="chocolate-aramar-nueva-imagen">
+          </div>
+          <div class="detalle">
+           <!-- <p>PRESENTAMOS NUEVA IMAGEN</p> -->
+          </div>
+        </div>
+        <!--segunda seccion : descripcion del producto-->
+        <div id="contenedorChocolate">	
+            <div class="product-details">              
+            <!--<h1>Chocolate de mesa</h1>-->
+            <p class="information">Chocolate de mesa con azúcar, producto 100% natural con cocoa, naturalmente cero colesterol y fuente de energía.</p>
+          <div class="control">           
+             <!-- Boton de compra-->
+            <button class="btn">
+             <span class="price">$5.800</span>
+             <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+             <span class="buy">COMPRAR</span>
+           </button>
+          </div>
+          </div>
+          <div class="product-image">   
+            <img src="../img/chocolate-aramar-pry.jpg" alt="chocolate-aramar-nueva-imagen">
+          </div>
           </div>
           
-          <div class="detalle"></div>
-        </div>
-
-        <div class="product-card">
-          <figure class="img-product">
-            <img src="../img/chocolate-aramar-nueva-imagen.png" alt="chocolate-aramar">
-            <div class="whishlist">
-              <img src="" alt="">
-            </div>
-          </figure> 
-          <div class="info-product">
-            <h3 class="title-product"> Chocolate aramar 500gr </h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione .</p>
-            <span class="price"> $6800 </span>
-          </div>
-          <a href="a" class="btn-cart"> Comprar</a>
-        </div>
-
-
         <div class="reseña"></div>
-    
-        
       </div>
       <!--
       
@@ -123,12 +128,14 @@
       <button class="btn btn-outline-success" type="submit">Suscribirse</button>
     </form>
     <div class="input-group check d-flex">
-     <!-- </div>
-      <input type="text" class="form-control" aria-label="Text input with radio button">
-    </div>-->
-        <input class="form-check-input " type="radio" value="" aria-label="Radio button for following text input" >
-        <p type="text" aria-label="Text input with radio button" > Acepto términos y condiciones. Autorizo el tratamiento de mis datos personales. </p>
-    </div>
+      <!-- </div>
+       <input type="text" class="form-control" aria-label="Text input with radio button">
+     </div>-->
+     <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+       <label class="form-check-label" for="flexCheckChecked"> Acepto términos y condiciones. Autorizo el tratamiento de mis datos personales. </label>
+     </div>
+     </div>
     <div style="margin-top: 40PX;">
       <h5>Hablemos:</h5>
       <div class="hablemos">
