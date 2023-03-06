@@ -26,8 +26,8 @@ div{
     }
 }
 //div de detalle del producto
-div{
-    background: $color-cuaterniarioPleta;
+section {
+        background: $color-cuaterniarioPleta;
         background-image: linear-gradient( 135deg, $color-tarjeta 20%, $color-cuaterniarioPleta 100%);
         background-attachment: fixed;	
         background-size: cover;
