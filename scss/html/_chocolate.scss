@@ -12,19 +12,21 @@
 
 div{
 
-    .card{
+   /* .tarjeta{
         @include sizeChocolate (100%, 100%);
         background-color: beige;
         overflow: hidden;
-        @include flexChocolate;
-        .imgBox{
+        width: 100%;
+        @include flexChocolate; */
+        .nuevaImagen{
             position: relative;
-            min-width: 300px;
-            @include sizeChocolate (300px, 100%);
+            min-width: 60%;
+            @include sizeChocolate (60%, 450px);
             @include flexChocolate;
+            align-content: center;
         }
     }
-}
+/*}*/
 //div de detalle del producto
 section {
         background: $color-cuaterniarioPleta;
